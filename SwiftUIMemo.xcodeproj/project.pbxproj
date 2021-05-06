@@ -14,6 +14,14 @@
 		1770B70426435DB600B1B3E4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1770B70326435DB600B1B3E4 /* Assets.xcassets */; };
 		1770B70726435DB600B1B3E4 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1770B70626435DB600B1B3E4 /* Preview Assets.xcassets */; };
 		1770B70A26435DB600B1B3E4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1770B70826435DB600B1B3E4 /* LaunchScreen.storyboard */; };
+		1770B71326435F8400B1B3E4 /* Memo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1770B71226435F8400B1B3E4 /* Memo.swift */; };
+		1770B7152643616100B1B3E4 /* MemoStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1770B7142643616100B1B3E4 /* MemoStore.swift */; };
+		1770B71826436ACB00B1B3E4 /* DateFormatter+Memo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1770B71726436ACB00B1B3E4 /* DateFormatter+Memo.swift */; };
+		1770B71B264372DF00B1B3E4 /* MemoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1770B71A264372DF00B1B3E4 /* MemoCell.swift */; };
+		1770B71E264374E500B1B3E4 /* ComposeScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1770B71D264374E500B1B3E4 /* ComposeScene.swift */; };
+		1770B72026438CF400B1B3E4 /* TextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1770B71F26438CF400B1B3E4 /* TextView.swift */; };
+		1770B7232643A7A300B1B3E4 /* KeyboardObserver.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1770B7222643A7A300B1B3E4 /* KeyboardObserver.swift */; };
+		1770B7252643ACB800B1B3E4 /* DetailScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1770B7242643ACB800B1B3E4 /* DetailScene.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +34,14 @@
 		1770B70626435DB600B1B3E4 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		1770B70926435DB600B1B3E4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1770B70B26435DB600B1B3E4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1770B71226435F8400B1B3E4 /* Memo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Memo.swift; sourceTree = "<group>"; };
+		1770B7142643616100B1B3E4 /* MemoStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemoStore.swift; sourceTree = "<group>"; };
+		1770B71726436ACB00B1B3E4 /* DateFormatter+Memo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DateFormatter+Memo.swift"; sourceTree = "<group>"; };
+		1770B71A264372DF00B1B3E4 /* MemoCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemoCell.swift; sourceTree = "<group>"; };
+		1770B71D264374E500B1B3E4 /* ComposeScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComposeScene.swift; sourceTree = "<group>"; };
+		1770B71F26438CF400B1B3E4 /* TextView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextView.swift; sourceTree = "<group>"; };
+		1770B7222643A7A300B1B3E4 /* KeyboardObserver.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyboardObserver.swift; sourceTree = "<group>"; };
+		1770B7242643ACB800B1B3E4 /* DetailScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailScene.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -42,6 +58,8 @@
 		1770B6EE26435DB300B1B3E4 = {
 			isa = PBXGroup;
 			children = (
+				1770B7212643A78300B1B3E4 /* Shared */,
+				1770B71C264373AD00B1B3E4 /* Scene */,
 				1770B6F926435DB300B1B3E4 /* SwiftUIMemo */,
 				1770B6F826435DB300B1B3E4 /* Products */,
 			);
@@ -58,9 +76,10 @@
 		1770B6F926435DB300B1B3E4 /* SwiftUIMemo */ = {
 			isa = PBXGroup;
 			children = (
+				1770B71626436A9E00B1B3E4 /* Extension */,
+				1770B71126435F4B00B1B3E4 /* Model */,
 				1770B6FA26435DB300B1B3E4 /* AppDelegate.swift */,
 				1770B6FC26435DB300B1B3E4 /* SceneDelegate.swift */,
-				1770B6FE26435DB300B1B3E4 /* MemoListScene.swift */,
 				1770B70326435DB600B1B3E4 /* Assets.xcassets */,
 				1770B70826435DB600B1B3E4 /* LaunchScreen.storyboard */,
 				1770B70B26435DB600B1B3E4 /* Info.plist */,
@@ -76,6 +95,51 @@
 				1770B70626435DB600B1B3E4 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		1770B71126435F4B00B1B3E4 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				1770B71226435F8400B1B3E4 /* Memo.swift */,
+				1770B7142643616100B1B3E4 /* MemoStore.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		1770B71626436A9E00B1B3E4 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				1770B71726436ACB00B1B3E4 /* DateFormatter+Memo.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		1770B719264372B400B1B3E4 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				1770B71A264372DF00B1B3E4 /* MemoCell.swift */,
+				1770B71F26438CF400B1B3E4 /* TextView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		1770B71C264373AD00B1B3E4 /* Scene */ = {
+			isa = PBXGroup;
+			children = (
+				1770B719264372B400B1B3E4 /* View */,
+				1770B6FE26435DB300B1B3E4 /* MemoListScene.swift */,
+				1770B71D264374E500B1B3E4 /* ComposeScene.swift */,
+				1770B7242643ACB800B1B3E4 /* DetailScene.swift */,
+			);
+			path = Scene;
+			sourceTree = "<group>";
+		};
+		1770B7212643A78300B1B3E4 /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				1770B7222643A7A300B1B3E4 /* KeyboardObserver.swift */,
+			);
+			path = Shared;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -149,9 +213,17 @@
 			buildActionMask = 2147483647;
 			files = (
 				1770B6FB26435DB300B1B3E4 /* AppDelegate.swift in Sources */,
+				1770B7152643616100B1B3E4 /* MemoStore.swift in Sources */,
+				1770B7232643A7A300B1B3E4 /* KeyboardObserver.swift in Sources */,
 				1770B70226435DB300B1B3E4 /* SwiftUIMemo.xcdatamodeld in Sources */,
+				1770B71826436ACB00B1B3E4 /* DateFormatter+Memo.swift in Sources */,
+				1770B7252643ACB800B1B3E4 /* DetailScene.swift in Sources */,
 				1770B6FD26435DB300B1B3E4 /* SceneDelegate.swift in Sources */,
 				1770B6FF26435DB300B1B3E4 /* MemoListScene.swift in Sources */,
+				1770B71326435F8400B1B3E4 /* Memo.swift in Sources */,
+				1770B71B264372DF00B1B3E4 /* MemoCell.swift in Sources */,
+				1770B71E264374E500B1B3E4 /* ComposeScene.swift in Sources */,
+				1770B72026438CF400B1B3E4 /* TextView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
